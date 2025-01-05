@@ -747,8 +747,17 @@ video {
   padding-bottom: 1.5rem;
 }
 
+.py-24{
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
 .pt-24{
   padding-top: 6rem;
+}
+
+.pb-4{
+  padding-bottom: 1rem;
 }
 
 .text-4xl{
@@ -758,6 +767,11 @@ video {
 
 .text-xl{
   font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-lg{
+  font-size: 1.125rem;
   line-height: 1.75rem;
 }
 
@@ -771,6 +785,18 @@ video {
 
 .font-medium{
   font-weight: 500;
+}
+
+.font-extrabold{
+  font-weight: 800;
+}
+
+.font-bold{
+  font-weight: 700;
+}
+
+.font-light{
+  font-weight: 300;
 }
 
 .capitalize{
@@ -794,6 +820,32 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.text-primary{
+  --tw-text-opacity: 1;
+  color: rgb(126 58 242 / var(--tw-text-opacity, 1));
+}
+
+.text-\[\]{
+  color: ;
+}
+
+.text-\[\#\]{
+  color: #;
+}
+
+.text-\[\#68\]{
+  color: #68;
+}
+
+.text-\[\#6872\]{
+  color: #6872;
+}
+
+.text-\[\#687280\]{
+  --tw-text-opacity: 1;
+  color: rgb(104 114 128 / var(--tw-text-opacity, 1));
 }
 
 .shadow-md{
@@ -871,5 +923,9 @@ body,html{
 @media (min-width: 1280px){
   .xl\:grid-cols-6{
     grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .xl\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }

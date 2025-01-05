@@ -15,3 +15,8 @@ body,html{
         @apply bg-primary rounded-lg text-white
       }
 }
+@layer base{
+  h2{
+    @apply font-extrabold leading-tight text-gray-900 text-4xl
+  }
+}
