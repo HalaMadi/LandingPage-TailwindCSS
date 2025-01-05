@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./output.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- rather than use px-20 we use m-auto, but be carful when add width  -->
+    <nav class="wrapper flex items-center justify-between gap-8 py-6">
+        <div class="flex items-center gap-8  w-full 2md:w-fit justify-between">
+            <div class="w-[120px] sm:w-[156px]">
+                <img class="w-full" src="./assets//Logo.svg" alt="Logo">
+            </div>
+            <div id="menuToggle" class="block 2md:hidden">
+                <i class=" material-icons">menu</i>
+            </div>
+        </div>
+        <div id="menu"
+            class="2md:flex items-center w-full justify-between flex-col 2md:flex-row absolute top-[80px] bg-white px-10 left-0 py-3 shadow-md 2md:static 2md:p-0 2md:shadow-none">
+            <ul class="flex gap-8 flex-col 2md:flex-row">
+                <li><a class="text-mainText font-medium">Company</a></li>
+                <li><a class="text-mainText font-medium"></a>Marketplace</li>
+                <li><a class="text-mainText font-medium"></a>Feature</li>
+                <li><a class="text-mainText font-medium"></a>Team</li>
+                <li><a class="text-mainText font-medium"></a>Contact</li>
+            </ul>
+            <div class="flex gap-8 items-center">
+                <button class="capitalize">log in</button>
+                <button class="bg-primary capitalize rounded-lg py-2 px-3 text-white">get started</button>
+            </div>
+        </div>
+    </nav>
+    <header class="wrapper py-16">
+        <div class="flex flex-col 2md:flex-row gap-24 items-center justify-between">
+            <div class="w-full 2md:w[50%]">
+                <h1 class="text-mainText text-4xl 2md:text-6xl font-black mb-6">Building digital products & brands.</h1>
+                <p class="text-secondaryText text-xl">Here at flowbite we focus on markets where technology, innovation,
+                    and
+                    capital can unlock long-term value and drive economic growth.</p>
+                <div class="flex mt-10 gap-4">
+                    <button class="button px-5 py-3">Start 30 day trial</button>
+                    <button class="px-5 py-3 border-[#E5E7EB] rounded-lg">Pricing & FAQ</button>
+                </div>
+            </div>
+            <div class="w-full 2md:w-[40%]">
+                <img class="w-full" src="assets/marketing-strategy.svg" alt="">
+            </div>
+        </div>
+        <div class="grid grid-cols-2 2md:grid-cols-3 xl:grid-cols-6 gap-4">
+            <img src="assets/Google.svg" alt="">
+            <img src="assets/layer1.svg" alt="">
+            <img src="assets/Page-1.svg" alt="">
+            <img src="assets/Vector (1).svg" alt="">
+            <img src="assets/Vector (2).svg" alt="">
+            <img src="assets/Vector.svg" alt="">
+        </div>
+    </header>
+    <main>
+        <section class="bg-[#F9FAFB] pt-24">
+            <div class="wrapper grid grid-cols-1 lg:grid-cols-2 gap-[74px] items-center justify-center">
+                <!-- Left Content -->
+                <div>
+                    <h2 class="leading-tight text-4xl text-mainText font-extralight mb-4">
+                        Work with tools you already use
+                    </h2>
+                    <p class="text-xl text-secondaryText mb-8">
+                        Deliver great service experiences fast - without the complexity of traditional ITSM solutions. 
+                        Accelerate critical development work, eliminate toil, and deploy changes with ease.
+                    </p>
+                    <ul class="mt-8 flex flex-col gap-4">
+                        <li class="flex gap-2 items-center">
+                            <img src="assets/Vector (3).svg" alt="Icon representing continuous integration and deployment">
+                            <span>Continuous integration and deployment</span>
+                        </li>
+                        <li class="flex gap-2 items-center">
+                            <img src="assets/Vector (3).svg" alt="Icon representing development workflow">
+                            <span>Development workflow</span>
+                        </li>
+                        <li class="flex gap-2 items-center">
+                            <img src="assets/Vector (3).svg" alt="Icon representing knowledge management">
+                            <span>Knowledge management</span>
+                        </li>
+                    </ul>
+                    <p class="text-xl text-secondaryText mt-6">
+                        Deliver great service experiences fast - without the complexity of traditional ITSM solutions.
+                    </p>
+                </div>
+                
+                <!-- Divider -->
+                <div class="w-full h-[1px] bg-[#E5E7EB] lg:hidden"></div>
+                
+                <!-- Right Content -->
+                <div>
+                    <img src="assets/features-1 1.svg" alt="Feature illustration">
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const menu = document.getElementById('menu');
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle("hidden");
+            if (menu.classList.contains("hidden")) {
+                menuToggle.innerHTML = ` <i class="material-icons">menu</i>`;
+            } else {
+                menuToggle.innerHTML = ` <i class="material-icons">close</i>`;
+            }
+        });
+    </script>
+</body>
+
+</html>
