@@ -13,6 +13,7 @@
 
 <body>
     <!-- rather than use px-20 we use m-auto, but be carful when add width  -->
+    <!-- Navbar -->
     <nav class="wrapper flex items-center justify-between gap-8 py-6">
         <div class="flex items-center gap-8  w-full 2md:w-fit justify-between">
             <div class="w-[120px] sm:w-[156px]">
@@ -33,112 +34,130 @@
             </ul>
             <div class="flex gap-8 items-center">
                 <button class="capitalize">log in</button>
-                <button class="bg-primary capitalize rounded-lg py-2 px-3 text-white">get started</button>
+                <button class="button capitalize py-2 px-3 ">get started</button>
             </div>
         </div>
     </nav>
+
+    <!-- Header -->
     <header class="wrapper py-16">
-        <div class="flex flex-col 2md:flex-row gap-24 items-center justify-between">
-            <div class="w-full 2md:w[50%]">
-                <h1 class="text-mainText text-4xl 2md:text-6xl font-black mb-6">Building digital products & brands.</h1>
-                <p class="text-secondaryText text-xl">Here at flowbite we focus on markets where technology, innovation,
-                    and
-                    capital can unlock long-term value and drive economic growth.</p>
-                <div class="flex mt-10 gap-4">
-                    <button class="button px-5 py-3">Start 30 day trial</button>
-                    <button class="px-5 py-3 border-[#E5E7EB] rounded-lg">Pricing & FAQ</button>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center justify-between">
+            <div class="">
+                <!-- Left Side -->
+                <h1 class="text-mainText text-4xl 2md:text-6xl font-black  mb-6">Building digital products & brands.
+                </h1>
+                <p class="text-secondaryText text-lg 2md:text-xl mb-6">Here at flowbite we focus on markets where
+                    technology,
+                    innovation, and capital can unlock long-term
+                    value
+                    and drive economic growth.</p>
+                <div class="flex gap-4">
+                    <button class="button bg-primary py-3 px-5">Start 30 day free trial</button>
+                    <button class="py-3 px-5 border">Pricing & FAQ</button>
                 </div>
             </div>
-            <div class="w-full 2md:w-[40%]">
-                <img class="w-full" src="assets/marketing-strategy.svg" alt="">
+            <!-- Right Side -->
+            <div class="flex justify-end">
+                <img src="./assets/marketing-strategy.svg" alt="">
             </div>
         </div>
-        <div class="grid grid-cols-2 2md:grid-cols-3 xl:grid-cols-6 gap-4">
-            <img src="assets/Google.svg" alt="">
-            <img src="assets/layer1.svg" alt="">
-            <img src="assets/Page-1.svg" alt="">
-            <img src="assets/Vector (1).svg" alt="">
-            <img src="assets/Vector (2).svg" alt="">
-            <img src="assets/Vector.svg" alt="">
+        <div class="grid grid-cols-2 2md:grid-cols-3 xl:grid-cols-6 gap-3 mt-8">
+            <img src="./assets/Google.svg" alt="">
+            <img src="./assets/layer1.svg" alt="">
+            <img src="./assets/Vector (1).svg" alt="">
+            <img src="./assets/Vector (2).svg" alt="">
+            <img src="./assets/Vector.svg" alt="">
+            <img src="./assets/Page-1.svg" alt="">
         </div>
     </header>
 
     <main>
-        <section class="bg-[#F9FAFB] pt-24">
+        <section class="bg-gray-100 pt-20">
             <div class="wrapper grid grid-cols-1 lg:grid-cols-2 gap-[74px] items-center justify-center">
                 <div>
-                    <h2 class="text-mainText mb-4">
-                        Work with tools you already use
+                    <h2 class="mb-4">Work with tools you already use
                     </h2>
-                    <p class="text-xl text-secondaryText mb-8">
-                        Deliver great service experiences fast - without the complexity of traditional ITSM solutions.
-                        Accelerate critical development work, eliminate toil, and deploy changes with ease.
-                    </p>
-                    <ul class="mt-8 flex flex-col gap-4">
-                        <li class="flex gap-2 items-center">
-                            <img src="assets/Vector (3).svg"
-                                alt="Icon representing continuous integration and deployment">
+                    <p class="text-xl text-secondaryText mb-8">Deliver great service experiences fast - without the
+                        complexity of traditional ITSM solutions.Accelerate critical development work, eliminate toil,
+                        and
+                        deploy changes with ease.</p>
+                    <div class="Divider"></div>
+                    <ul class="mt-4 flex flex-col gap-4">
+                        <li class="flex gap-2">
+                            <img src="./assets/Vector (3).svg" alt="">
                             <span>Continuous integration and deployment</span>
                         </li>
-                        <li class="flex gap-2 items-center">
-                            <img src="assets/Vector (3).svg" alt="Icon representing development workflow">
+                        <li class="flex gap-2">
+                            <img src="./assets/Vector (3).svg" alt="">
                             <span>Development workflow</span>
                         </li>
-                        <li class="flex gap-2 items-center">
-                            <img src="assets/Vector (3).svg" alt="Icon representing knowledge management">
+                        <li class="flex gap-2">
+                            <img src="./assets/Vector (3).svg" alt="">
                             <span>Knowledge management</span>
                         </li>
                     </ul>
                     <p class="text-xl text-secondaryText mt-6">
                         Deliver great service experiences fast - without the complexity of traditional ITSM solutions.
-                    </p>
                 </div>
-                <div class="w-full h-[1px] bg-[#E5E7EB] lg:hidden"></div>
                 <div>
-                    <img src="assets/features-1 1.svg" alt="Feature illustration">
+                    <img src="./assets/features-1 1.svg" alt="">
                 </div>
             </div>
         </section>
-    </main>
 
-    <main>
-        <section class="bg-[#F9FAFB] pt-24">
-            <div class="wrapper grid grid-cols-1 lg:grid-cols-2 gap-[74px] items-center justify-center">
+        <section class="bg-gray-100 pt-20">
+            <div class="wrapper grid grid-cols-1 lg:grid-cols-2 gap-[75px] items-center justify-center">
                 <div>
-                    <img src="assets/feature-2 1.svg" alt="Feature illustration">
+                    <img src="./assets/feature-2 1.svg" alt="">
                 </div>
-                <div class="w-full h-[1px] bg-[#E5E7EB] lg:hidden"></div>
                 <div>
-                    <h2 class="text-mainText mb-4">
-                        Work with tools you already use
+                    <h2 class="mb-4">We invest in the world’s
+                        potential
                     </h2>
-                    <p class="text-xl text-secondaryText mb-8">
-                        Deliver great service experiences fast - without the complexity of traditional ITSM solutions.
-                        Accelerate critical development work, eliminate toil, and deploy changes with ease.
-                    </p>
-                    <ul class="mt-8 flex flex-col gap-4">
-                        <li class="flex gap-2 items-center">
-                            <img src="assets/Vector (3).svg"
-                                alt="Icon representing continuous integration and deployment">
-                            <span>Continuous integration and deployment</span>
+                    <p class="text-xl text-secondaryText mb-8">Deliver great service experiences fast - without the
+                        complexity of traditional ITSM solutions.Accelerate critical development work, eliminate toil,
+                        and deploy changes with ease.</p>
+                    <div class="Divider"></div>
+                    <ul class="mt-4 flex flex-col gap-4">
+                        <li class="flex gap-2">
+                            <img src="./assets/Vector (3).svg" alt="">
+                            <span>Dynamic reports and dashboards</span>
                         </li>
-                        <li class="flex gap-2 items-center">
-                            <img src="assets/Vector (3).svg" alt="Icon representing development workflow">
+                        <li class="flex gap-2">
+                            <img src="./assets/Vector (3).svg" alt="">
+                            <span>Templates for everyone</span>
+                        </li>
+                        <li class="flex gap-2">
+                            <img src="./assets/Vector (3).svg" alt="">
                             <span>Development workflow</span>
                         </li>
-                        <li class="flex gap-2 items-center">
-                            <img src="assets/Vector (3).svg" alt="Icon representing knowledge management">
+                        <li class="flex gap-2">
+                            <img src="./assets/Vector (3).svg" alt="">
+                            <span>Limitless business automation</span>
+                        </li>
+                        <li class="flex gap-2">
+                            <img src="./assets/Vector (3).svg" alt="">
                             <span>Knowledge management</span>
                         </li>
                     </ul>
                     <p class="text-xl text-secondaryText mt-6">
                         Deliver great service experiences fast - without the complexity of traditional ITSM solutions.
-                    </p>
                 </div>
+
+            </div>
+        </section>
+
+        <section>
+            <div class="wrapper grid grid-cols-1 lg:grid-cols-2 gap-24 items-center justify-center"> 
+             <div>
+                 <span class="text-primary text-lg font-medium">Trusted Worldwide</span>
+                <h2>Trusted by over 600 million users and 10,000 teams</h2>
+             </div>
             </div>
         </section>
     </main>
-    <section>
+    
+      <section>
         <div class="wrapper grid grid-cols-1 xl:grid-cols-2 gap-24 py-24">
             <div>
                 <span class="text-lg text-primary">Trusted Worldwide</span>
@@ -181,7 +200,7 @@
             </div>
         </div>
     </section>
-    <!-- carousel -->
+ 
     <section class="bg-[#F9FAFB]">
         <div class="wrapper py-24">
             <div id="default-carousel" class="relative w-full" data-carousel="slide">
